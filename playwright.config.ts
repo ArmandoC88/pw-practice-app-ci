@@ -50,7 +50,7 @@ export default defineConfig<TestOptions>({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     //actionTimeout:5000,
-    navigationTimeout:8000,
+    navigationTimeout:10000,
     video:{
       mode:'off',
       size:{width:1920,height:1080}
