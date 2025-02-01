@@ -11,7 +11,7 @@ test.beforeEach(async({page})=>{
     await page.goto(('/'))
     //await page.goto('http://localhost:4200/')
 })
-
+/*
 test('navigate to form page', async({page})=>{
     const pm = new PageManager(page)
     await pm.navigateTo().formLayoutsPage()
@@ -61,8 +61,8 @@ test('Parametrized methods',async({page})=>{
     // await onDatePickerPage.selectCommonDatePickerDateFromToday(2)
     // await onDatePickerPage.selectDatepickerWithRangeFromToday(3, 9)
 })
-
-test.only('testing with argos ci', async({page})=>{
+*/
+test('testing with argos ci', async({page})=>{
     const pm = new PageManager(page)
     await pm.navigateTo().formLayoutsPage()
     await pm.navigateTo().datepickerPage()
